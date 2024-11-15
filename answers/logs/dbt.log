@@ -1,0 +1,163 @@
+[0m22:12:12.030387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBB0F28320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBB0F28350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBB0F28380>]}
+
+
+============================== 22:12:12.035389 | 3fe82fc4-5ec2-4efb-bf77-38f277feb7cb ==============================
+[0m22:12:12.035389 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:12:12.036388 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\snehi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:12:12.037278 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Learning\Git\dbt-test-Bigquery\answers\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:12:12.038784 [debug] [MainThread]: Command `dbt deps` failed at 22:12:12.037782 after 0.07 seconds
+[0m22:12:12.038784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBAA900FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBB0F07050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BBB0F07BF0>]}
+[0m22:12:12.039784 [debug] [MainThread]: Flushing usage events
+[0m22:21:15.580588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D1515B72F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D151266120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D1515B7080>]}
+
+
+============================== 22:21:15.584588 | 339527d4-a8af-42e7-8b37-d944731daf2a ==============================
+[0m22:21:15.584588 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:21:15.585589 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\snehi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m22:21:15.838682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '339527d4-a8af-42e7-8b37-d944731daf2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D15070FE60>]}
+[0m22:21:15.841683 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-hlq46zft'
+[0m22:21:15.841683 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:21:15.939643 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:21:15.940653 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:21:15.984356 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:21:15.987357 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m22:21:16.047170 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m22:21:16.050173 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m22:21:16.115774 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m22:21:16.116775 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m22:21:16.155306 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m22:21:16.166309 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:21:17.916185 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+[0m22:21:17.946191 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 126, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 172, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\main.py", line 462, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\task\deps.py", line 81, in run
+    package.install(self.project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\registry.py", line 60, in install
+    self._install(project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 117, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\utils.py", line 601, in _connection_exception_retry
+    return fn()
+           ^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 129, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 505, in untar_package
+    dbt.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 493, in rename
+    shutil.move(from_path, to_path)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 865, in move
+    rmtree(src)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 627, in _rmtree_unsafe
+    os.rmdir(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+
+[0m22:21:17.949192 [debug] [MainThread]: Command `dbt deps` failed at 22:21:17.949192 after 2.43 seconds
+[0m22:21:17.950192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D15138DA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D151A5E630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D150949CA0>]}
+[0m22:21:17.950192 [debug] [MainThread]: Flushing usage events
+[0m22:24:49.644624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DE06F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DAD6120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DD2FC20>]}
+
+
+============================== 22:24:49.648626 | a4b2bfc7-b42b-4ce8-8b26-b0361d6b3897 ==============================
+[0m22:24:49.648626 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:24:49.648626 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\snehi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:24:49.751152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a4b2bfc7-b42b-4ce8-8b26-b0361d6b3897', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DE41BE0>]}
+[0m22:24:49.754153 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-pb5xjuyw'
+[0m22:24:49.754153 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:24:49.829569 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:24:50.022811 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:24:50.067174 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:24:50.071176 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m22:24:50.118015 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m22:24:50.121016 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m22:24:50.156189 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m22:24:50.158190 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m22:24:50.320884 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m22:24:50.331888 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:24:51.783628 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt_utils\\integration_tests'
+[0m22:24:51.789630 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 627, in _rmtree_unsafe
+    os.rmdir(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt_utils\\integration_tests'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 126, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 172, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\main.py", line 462, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\task\deps.py", line 81, in run
+    package.install(self.project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\registry.py", line 60, in install
+    self._install(project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 117, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\utils.py", line 601, in _connection_exception_retry
+    return fn()
+           ^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 129, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 505, in untar_package
+    dbt.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 491, in rename
+    rmdir(to_path)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 235, in rmdir
+    shutil.rmtree(path, onerror=onerror)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 750, in onexc
+    return onerror(func, path, exc_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 207, in _windows_rmdir_readonly
+    func(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt_utils\\integration_tests'
+
+[0m22:24:51.792631 [debug] [MainThread]: Command `dbt deps` failed at 22:24:51.792631 after 2.22 seconds
+[0m22:24:51.793630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DD2FC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DD2ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B01DAD4320>]}
+[0m22:24:51.793630 [debug] [MainThread]: Flushing usage events
