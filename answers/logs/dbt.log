@@ -237,3 +237,116 @@ PermissionError: [WinError 32] The process cannot access the file because it is 
 [0m22:37:28.173649 [debug] [MainThread]: Command `dbt deps` failed at 22:37:28.173649 after 1.89 seconds
 [0m22:37:28.174649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E2532240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E020D670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E1795AF0>]}
 [0m22:37:28.174649 [debug] [MainThread]: Flushing usage events
+[0m22:46:08.999982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6694E71A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6693FF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D66902CFB0>]}
+
+
+============================== 22:46:09.003984 | 93dfbdd9-9a43-4aea-8e99-2c19c20fdbfe ==============================
+[0m22:46:09.003984 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:46:09.004984 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:46:09.107006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93dfbdd9-9a43-4aea-8e99-2c19c20fdbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D669434530>]}
+[0m22:46:09.109006 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-x0h4p7wt'
+[0m22:46:09.110007 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:46:09.278330 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:46:09.279590 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:46:09.323616 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:46:09.326616 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m22:46:09.381194 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m22:46:09.384195 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m22:46:09.454211 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m22:46:09.456211 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m22:46:09.503201 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m22:46:09.515206 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:46:11.286351 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+[0m22:46:11.291352 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 126, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 172, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\main.py", line 462, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\task\deps.py", line 81, in run
+    package.install(self.project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\registry.py", line 60, in install
+    self._install(project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 117, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\utils.py", line 601, in _connection_exception_retry
+    return fn()
+           ^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 129, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 505, in untar_package
+    dbt.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 493, in rename
+    shutil.move(from_path, to_path)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 865, in move
+    rmtree(src)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 627, in _rmtree_unsafe
+    os.rmdir(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+
+[0m22:46:11.294353 [debug] [MainThread]: Command `dbt deps` failed at 22:46:11.294353 after 2.37 seconds
+[0m22:46:11.295354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6690012E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D668F55EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6691E5340>]}
+[0m22:46:11.295354 [debug] [MainThread]: Flushing usage events
+[0m22:49:00.472517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE189E7320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE186E4FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE189E7FB0>]}
+
+
+============================== 22:49:00.477517 | 4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc ==============================
+[0m22:49:00.477517 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:49:00.477517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'debug': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:49:00.582542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE188D1430>]}
+[0m22:49:00.585542 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-2bbe23qu'
+[0m22:49:00.586542 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:49:00.697473 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:49:00.698474 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:49:00.749439 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:49:00.752441 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m22:49:00.841450 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m22:49:00.844451 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m22:49:00.916138 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m22:49:00.918138 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m22:49:00.971273 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m22:49:00.982277 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:49:02.487073 [info ] [MainThread]: Installed from version 1.0.0
+[0m22:49:02.488074 [info ] [MainThread]: Updated version available: 1.3.0
+[0m22:49:02.488074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1864ED80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1886E660>]}
+[0m22:49:02.489074 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m22:49:04.018156 [info ] [MainThread]: Installed from version 0.8.5
+[0m22:49:04.019156 [info ] [MainThread]: Updated version available: 0.10.4
+[0m22:49:04.019156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1886E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1864ED80>]}
+[0m22:49:04.020659 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m22:49:04.547146 [info ] [MainThread]: Installed from version 0.9.0
+[0m22:49:04.548146 [info ] [MainThread]: Updated version available: 0.12.1
+[0m22:49:04.549146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1886E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE188FF7A0>]}
+[0m22:49:04.549146 [info ] [MainThread]: Installing calogica/dbt_date
+[0m22:49:05.057071 [info ] [MainThread]: Installed from version 0.7.2
+[0m22:49:05.058071 [info ] [MainThread]: Updated version available: 0.10.1
+[0m22:49:05.058071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4cb6c5bb-cdcd-43a0-9c39-0a93c57f04cc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1886E660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE18712300>]}
+[0m22:49:05.059071 [info ] [MainThread]: 
+[0m22:49:05.059071 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_expectations', 'dbt-labs/codegen', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m22:49:05.083030 [debug] [MainThread]: Command `dbt deps` succeeded at 22:49:05.083030 after 4.68 seconds
+[0m22:49:05.084032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE184554C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE185EEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE186E5970>]}
+[0m22:49:05.085032 [debug] [MainThread]: Flushing usage events
