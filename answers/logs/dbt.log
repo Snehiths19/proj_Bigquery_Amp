@@ -350,3 +350,742 @@ Update your versions in packages.yml, then run dbt deps
 [0m22:49:05.083030 [debug] [MainThread]: Command `dbt deps` succeeded at 22:49:05.083030 after 4.68 seconds
 [0m22:49:05.084032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE184554C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE185EEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE186E5970>]}
 [0m22:49:05.085032 [debug] [MainThread]: Flushing usage events
+[0m22:57:44.535586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E006F32E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E006F32A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E006F33230>]}
+
+
+============================== 22:57:44.539054 | d81e256d-91aa-492c-bf57-9ae8c36a9ba0 ==============================
+[0m22:57:44.539054 [info ] [MainThread]: Running with dbt=1.6.18
+[0m22:57:44.540053 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'debug': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:45.468367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd81e256d-91aa-492c-bf57-9ae8c36a9ba0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E008D5C230>]}
+[0m22:57:45.479884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd81e256d-91aa-492c-bf57-9ae8c36a9ba0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E007A73D10>]}
+[0m22:57:45.480884 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m22:57:45.509070 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m22:57:45.512070 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:57:45.513071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd81e256d-91aa-492c-bf57-9ae8c36a9ba0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E008F5CF50>]}
+[0m22:57:46.964015 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.answers.stg_ecommerce_orders' (models\staging\stg_ecommerce_orders.sql) depends on a source named 'thelook_ecommerce.orders' which was not found
+[0m22:57:46.965518 [debug] [MainThread]: Command `dbt run` failed at 22:57:46.965518 after 2.51 seconds
+[0m22:57:46.965518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E006F32C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0091092E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E00796F860>]}
+[0m22:57:46.966643 [debug] [MainThread]: Flushing usage events
+[0m23:01:09.712331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBD187BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBD187170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBD4DA600>]}
+
+
+============================== 23:01:09.717332 | 09c59a5a-2a00-4f62-8949-c7f6ae7f721a ==============================
+[0m23:01:09.717332 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:01:09.718332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:01:10.290578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09c59a5a-2a00-4f62-8949-c7f6ae7f721a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBF51D6A0>]}
+[0m23:01:10.306580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09c59a5a-2a00-4f62-8949-c7f6ae7f721a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBF38BAD0>]}
+[0m23:01:10.309581 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:01:10.350591 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:01:10.354591 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:01:10.355591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '09c59a5a-2a00-4f62-8949-c7f6ae7f721a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBF538860>]}
+[0m23:01:11.852027 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.answers.stg_ecommerce_orders' (models\staging\stg_ecommerce_orders.sql) depends on a source named 'thelook_ecommerce.orders' which was not found
+[0m23:01:11.854027 [debug] [MainThread]: Command `dbt run` failed at 23:01:11.853026 after 2.24 seconds
+[0m23:01:11.854027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBCF780B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBE220110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DBCEDD820>]}
+[0m23:01:11.855027 [debug] [MainThread]: Flushing usage events
+[0m23:06:28.113864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2647EF0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2647EE750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2647EFFB0>]}
+
+
+============================== 23:06:28.117865 | fe9e27ef-ea22-4306-b980-4b727e928ebb ==============================
+[0m23:06:28.117865 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:06:28.118864 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m23:06:28.123866 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m23:06:28.124865 [debug] [MainThread]: Command `dbt run` failed at 23:06:28.124865 after 0.08 seconds
+[0m23:06:28.125865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2645CE2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2645889E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2643B9730>]}
+[0m23:06:28.126866 [debug] [MainThread]: Flushing usage events
+[0m23:19:36.318404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC339AE540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC339AE810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC339AF110>]}
+
+
+============================== 23:19:36.322404 | ed88a21f-1dad-41b5-a761-7c03b6be7ca6 ==============================
+[0m23:19:36.322404 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:19:36.323405 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:19:36.328407 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m23:19:36.329406 [debug] [MainThread]: Command `dbt run` failed at 23:19:36.329406 after 0.08 seconds
+[0m23:19:36.330407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC339AF410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC3378D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC33687A10>]}
+[0m23:19:36.331407 [debug] [MainThread]: Flushing usage events
+[0m23:21:39.864457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E995ABE660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E995ABE930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E995ABEB70>]}
+
+
+============================== 23:21:39.868457 | 7ac87c61-cccb-44d8-b4be-b24c25f872e5 ==============================
+[0m23:21:39.868457 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:21:39.869458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m23:21:39.875459 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m23:21:39.876460 [debug] [MainThread]: Command `dbt run` failed at 23:21:39.876460 after 0.09 seconds
+[0m23:21:39.877460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9957EC470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9952FDAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E995ABF410>]}
+[0m23:21:39.878463 [debug] [MainThread]: Flushing usage events
+[0m23:27:07.559219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208D06857F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208D09AEF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208D09AE870>]}
+
+
+============================== 23:27:07.563219 | 4f2c548e-269a-4069-8c1d-6de9acaa30bf ==============================
+[0m23:27:07.563219 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:27:07.564220 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:27:07.569221 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m23:27:07.570221 [debug] [MainThread]: Command `dbt run` failed at 23:27:07.570221 after 0.08 seconds
+[0m23:27:07.571221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208CFEA7470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208CE461280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208D09AF410>]}
+[0m23:27:07.571221 [debug] [MainThread]: Flushing usage events
+[0m23:37:28.295890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9BC4E450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9BC4EC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9BC4FFB0>]}
+
+
+============================== 23:37:28.300056 | 70d617bf-9b2e-447a-8804-3e9ebb5aada7 ==============================
+[0m23:37:28.300056 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:37:28.301056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:37:28.846946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70d617bf-9b2e-447a-8804-3e9ebb5aada7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9C47BE00>]}
+[0m23:37:28.858453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70d617bf-9b2e-447a-8804-3e9ebb5aada7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9DC49A00>]}
+[0m23:37:28.859454 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:37:28.887856 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:37:28.889856 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:37:28.889856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '70d617bf-9b2e-447a-8804-3e9ebb5aada7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9DC6D8B0>]}
+[0m23:37:30.329360 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.answers.stg_ecommerce_orders' (models\staging\stg_ecommerce_orders.sql) depends on a source named 'thelook_ecommerce.orders' which was not found
+[0m23:37:30.330361 [debug] [MainThread]: Command `dbt run` failed at 23:37:30.330361 after 2.10 seconds
+[0m23:37:30.331360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9B9B2600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9DDF1D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB9DE9E030>]}
+[0m23:37:30.331360 [debug] [MainThread]: Flushing usage events
+[0m23:41:07.182025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DC0FF3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D9C0C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DC0FF590>]}
+
+
+============================== 23:41:07.186026 | 269191c9-73b8-4215-beab-c300ffa7fbb9 ==============================
+[0m23:41:07.186026 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:41:07.187026 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m23:41:07.720647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE0EDD60>]}
+[0m23:41:07.731650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE109A00>]}
+[0m23:41:07.733651 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:41:07.761657 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:41:07.763657 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:41:07.764658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE126E40>]}
+[0m23:41:09.260498 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.answers.marts
+- tests.answers
+[0m23:41:09.265499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE1250A0>]}
+[0m23:41:09.303507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE2A9B20>]}
+[0m23:41:09.304507 [info ] [MainThread]: Found 1 model, 1 operation, 7 sources, 0 exposures, 0 metrics, 738 macros, 0 groups, 0 semantic models
+[0m23:41:09.305508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE1F16A0>]}
+[0m23:41:09.307509 [info ] [MainThread]: 
+[0m23:41:09.308509 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:41:09.309509 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8'
+[0m23:41:09.310508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:09.727581 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_skilful-alpha-441719-r8, now create_skilful-alpha-441719-r8_dbt_test)
+[0m23:41:09.728582 [debug] [ThreadPool]: Creating schema "database: "skilful-alpha-441719-r8"
+schema: "dbt_test"
+"
+[0m23:41:09.736583 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:41:09.736583 [debug] [ThreadPool]: On create_skilful-alpha-441719-r8_dbt_test: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "connection_name": "create_skilful-alpha-441719-r8_dbt_test"} */
+create schema if not exists `skilful-alpha-441719-r8`.`dbt_test`
+  
+[0m23:41:10.160182 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:8eacc8ed-9e02-423a-bb35-e48b8f99e896&page=queryresults
+[0m23:41:11.159343 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8_dbt_test'
+[0m23:41:11.160343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:11.551545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE2503B0>]}
+[0m23:41:11.551545 [info ] [MainThread]: 
+[0m23:41:11.552546 [info ] [MainThread]: Running 1 on-run-start hook
+[0m23:41:11.559546 [info ] [MainThread]: Database error while running on-run-start
+[0m23:41:11.560547 [info ] [MainThread]: Concurrency: 64 threads (target='dev')
+[0m23:41:11.561547 [info ] [MainThread]: 
+[0m23:41:11.590558 [debug] [Thread-1 (]: Began running node model.answers.stg_ecommerce_orders
+[0m23:41:11.591559 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_test.stg_ecommerce_orders ..................... [RUN]
+[0m23:41:11.592559 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.answers.stg_ecommerce_orders'
+[0m23:41:11.592559 [debug] [Thread-1 (]: Began compiling node model.answers.stg_ecommerce_orders
+[0m23:41:11.595559 [debug] [Thread-1 (]: Writing injected SQL for node "model.answers.stg_ecommerce_orders"
+[0m23:41:11.599560 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (compile): 23:41:11.593559 => 23:41:11.599560
+[0m23:41:11.600560 [debug] [Thread-1 (]: Began executing node model.answers.stg_ecommerce_orders
+[0m23:41:11.627567 [debug] [Thread-1 (]: Writing runtime sql for node "model.answers.stg_ecommerce_orders"
+[0m23:41:11.631567 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:41:11.632568 [debug] [Thread-1 (]: On model.answers.stg_ecommerce_orders: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "node_id": "model.answers.stg_ecommerce_orders"} */
+
+  
+    
+
+    create or replace table `skilful-alpha-441719-r8`.`dbt_test`.`stg_ecommerce_orders`
+      
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 168 hour),
+    
+      description=""""""
+    )
+    as (
+      WITH source AS (
+	SELECT *
+
+	FROM `bigquery-public-data`.`thelook_ecommerce`.`orders`
+)
+
+SELECT
+	-- IDs
+	order_id,
+	user_id,
+
+	-- Timestamps
+	created_at,
+	returned_at,
+	delivered_at,
+	shipped_at,
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+FROM source
+    );
+  
+[0m23:41:12.466993 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:f099e355-e08a-44e5-96b9-4f7f46096359&page=queryresults
+[0m23:41:15.788418 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (execute): 23:41:11.600560 => 23:41:15.788418
+[0m23:41:15.789418 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '269191c9-73b8-4215-beab-c300ffa7fbb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DE2A8A70>]}
+[0m23:41:15.790418 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_test.stg_ecommerce_orders ................ [[32mCREATE TABLE (124.7k rows, 6.1 MiB processed)[0m in 4.20s]
+[0m23:41:15.791418 [debug] [Thread-1 (]: Finished running node model.answers.stg_ecommerce_orders
+[0m23:41:15.794419 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:41:15.795419 [debug] [MainThread]: Connection 'create_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:41:15.795419 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:41:15.795419 [debug] [MainThread]: Connection 'model.answers.stg_ecommerce_orders' was properly closed.
+[0m23:41:15.796419 [info ] [MainThread]: 
+[0m23:41:15.797419 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.49 seconds (6.49s).
+[0m23:41:15.798419 [debug] [MainThread]: Command end result
+[0m23:41:15.829644 [info ] [MainThread]: 
+[0m23:41:15.830645 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m23:41:15.831645 [info ] [MainThread]: 
+[0m23:41:15.831645 [error] [MainThread]:   on-run-start failed, error:
+ 'get_brand_name' is undefined
+[0m23:41:15.832646 [info ] [MainThread]: 
+[0m23:41:15.832646 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m23:41:15.833646 [debug] [MainThread]: Command `dbt run` failed at 23:41:15.833646 after 8.72 seconds
+[0m23:41:15.834646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D9B4B440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DC9D69F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5DDDF50A0>]}
+[0m23:41:15.834646 [debug] [MainThread]: Flushing usage events
+[0m23:46:42.407703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937D8616D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937D7B1340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937D7D7260>]}
+
+
+============================== 23:46:42.411704 | 5316b8ea-59d2-4f63-9ab6-275e3ce3d940 ==============================
+[0m23:46:42.411704 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:46:42.411704 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:46:42.946222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937F858320>]}
+[0m23:46:42.957225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FAF77D0>]}
+[0m23:46:42.958224 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:46:42.985231 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:46:43.247626 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m23:46:43.248627 [debug] [MainThread]: Partial parsing: added file: answers://models\staging\stg_ecommerce_orders.yml
+[0m23:46:43.267631 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'stg_ecommerce__orders' in the 'models' section of file 'models\staging\stg_ecommerce_orders.yml'
+[0m23:46:43.349649 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_order_id.8c55304277' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.350649 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.unique_stg_ecommerce__orders_order_id.319f133bdd' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.351650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_user_id.153c9bc159' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.351650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_created_at.469c488d29' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.352650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_returned_at.df84a70133' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.352650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.dbt_utils_expression_is_true_stg_ecommerce__orders_returned_at___delivered_at.49b96d90c0' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.353650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_delivered_at.28f88665cb' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.354650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.dbt_utils_expression_is_true_stg_ecommerce__orders_delivered_at___shipped_at.092ac059a7' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.354650 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_shipped_at.8df8247ab2' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.355651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.dbt_utils_expression_is_true_stg_ecommerce__orders_shipped_at___created_at.debf354967' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.355651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_status.da345939cd' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.356651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.unexpected_order_status.fd38ffc26c' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.357651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.not_null_stg_ecommerce__orders_num_items_ordered.7d4160dd58' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.357651 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.answers.dbt_expectations_expect_column_values_to_be_between_stg_ecommerce__orders_num_items_ordered__0.83e2a51249' (models\staging\stg_ecommerce_orders.yml) depends on a node named 'stg_ecommerce__orders' in package '' which was not found
+[0m23:46:43.425666 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.answers.marts
+[0m23:46:43.430667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FDEA630>]}
+[0m23:46:43.472677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FDB98B0>]}
+[0m23:46:43.472677 [info ] [MainThread]: Found 1 model, 1 operation, 7 sources, 0 exposures, 0 metrics, 738 macros, 0 groups, 0 semantic models
+[0m23:46:43.473677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FDB9A30>]}
+[0m23:46:43.475677 [info ] [MainThread]: 
+[0m23:46:43.476677 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:46:43.477678 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8'
+[0m23:46:43.478678 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:43.932805 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8_dbt_test'
+[0m23:46:43.932805 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:44.220301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FDB8B00>]}
+[0m23:46:44.221301 [info ] [MainThread]: 
+[0m23:46:44.222300 [info ] [MainThread]: Running 1 on-run-start hook
+[0m23:46:44.229302 [info ] [MainThread]: Database error while running on-run-start
+[0m23:46:44.230302 [info ] [MainThread]: Concurrency: 64 threads (target='dev')
+[0m23:46:44.230302 [info ] [MainThread]: 
+[0m23:46:44.239304 [debug] [Thread-1 (]: Began running node model.answers.stg_ecommerce_orders
+[0m23:46:44.240305 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_test.stg_ecommerce_orders ..................... [RUN]
+[0m23:46:44.241305 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.answers.stg_ecommerce_orders'
+[0m23:46:44.242305 [debug] [Thread-1 (]: Began compiling node model.answers.stg_ecommerce_orders
+[0m23:46:44.245306 [debug] [Thread-1 (]: Writing injected SQL for node "model.answers.stg_ecommerce_orders"
+[0m23:46:44.250344 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (compile): 23:46:44.242305 => 23:46:44.249343
+[0m23:46:44.250344 [debug] [Thread-1 (]: Began executing node model.answers.stg_ecommerce_orders
+[0m23:46:44.263346 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:46:44.576265 [debug] [Thread-1 (]: Writing runtime sql for node "model.answers.stg_ecommerce_orders"
+[0m23:46:44.581265 [debug] [Thread-1 (]: On model.answers.stg_ecommerce_orders: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "node_id": "model.answers.stg_ecommerce_orders"} */
+
+  
+    
+
+    create or replace table `skilful-alpha-441719-r8`.`dbt_test`.`stg_ecommerce_orders`
+      
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 168 hour),
+    
+      description=""""""
+    )
+    as (
+      WITH source AS (
+	SELECT *
+
+	FROM `bigquery-public-data`.`thelook_ecommerce`.`orders`
+)
+
+SELECT
+	-- IDs
+	order_id,
+	user_id,
+
+	-- Timestamps
+	created_at,
+	returned_at,
+	delivered_at,
+	shipped_at,
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+FROM source
+    );
+  
+[0m23:46:45.189861 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:b5783743-6f16-4cc1-8472-f109ca54eeb4&page=queryresults
+[0m23:46:47.845119 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (execute): 23:46:44.251343 => 23:46:47.845119
+[0m23:46:47.846119 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5316b8ea-59d2-4f63-9ab6-275e3ce3d940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FE38620>]}
+[0m23:46:47.847120 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_test.stg_ecommerce_orders ................ [[32mCREATE TABLE (124.7k rows, 6.1 MiB processed)[0m in 3.60s]
+[0m23:46:47.848119 [debug] [Thread-1 (]: Finished running node model.answers.stg_ecommerce_orders
+[0m23:46:47.851120 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:46:47.852120 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8' was properly closed.
+[0m23:46:47.852120 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:46:47.853120 [debug] [MainThread]: Connection 'model.answers.stg_ecommerce_orders' was properly closed.
+[0m23:46:47.853120 [info ] [MainThread]: 
+[0m23:46:47.854121 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.38 seconds (4.38s).
+[0m23:46:47.855121 [debug] [MainThread]: Command end result
+[0m23:46:47.889129 [info ] [MainThread]: 
+[0m23:46:47.890130 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m23:46:47.890130 [info ] [MainThread]: 
+[0m23:46:47.891129 [error] [MainThread]:   on-run-start failed, error:
+ 'get_brand_name' is undefined
+[0m23:46:47.892130 [info ] [MainThread]: 
+[0m23:46:47.893129 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m23:46:47.894130 [debug] [MainThread]: Command `dbt run` failed at 23:46:47.894130 after 5.56 seconds
+[0m23:46:47.894130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937D8DD910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937FA63140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002937E53B950>]}
+[0m23:46:47.895130 [debug] [MainThread]: Flushing usage events
+[0m23:47:33.597569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001321242F050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001321242F0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001321242ED20>]}
+
+
+============================== 23:47:33.601570 | 515fa7da-22be-42f8-b768-4c01d728fca2 ==============================
+[0m23:47:33.601570 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:47:33.602570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:47:34.143203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013213172C60>]}
+[0m23:47:34.153205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013214481A00>]}
+[0m23:47:34.154206 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:47:34.182211 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:47:34.433267 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:47:34.434268 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:47:34.435268 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.answers.marts
+[0m23:47:34.440270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132144D5040>]}
+[0m23:47:34.507760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013214755BB0>]}
+[0m23:47:34.507760 [info ] [MainThread]: Found 1 model, 1 operation, 7 sources, 0 exposures, 0 metrics, 738 macros, 0 groups, 0 semantic models
+[0m23:47:34.508760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132141BB680>]}
+[0m23:47:34.510760 [info ] [MainThread]: 
+[0m23:47:34.511762 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:47:34.512761 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8'
+[0m23:47:34.513761 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:47:34.866826 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_skilful-alpha-441719-r8, now create_skilful-alpha-441719-r8_dbt_test)
+[0m23:47:34.867826 [debug] [ThreadPool]: Creating schema "database: "skilful-alpha-441719-r8"
+schema: "dbt_test"
+"
+[0m23:47:34.876828 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:47:34.877828 [debug] [ThreadPool]: On create_skilful-alpha-441719-r8_dbt_test: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "connection_name": "create_skilful-alpha-441719-r8_dbt_test"} */
+create schema if not exists `skilful-alpha-441719-r8`.`dbt_test`
+  
+[0m23:47:35.259373 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:2ecb3a82-dfc6-4433-b9ef-74405cc1f396&page=queryresults
+[0m23:47:36.004218 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8_dbt_test'
+[0m23:47:36.005219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:47:36.354289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013214755F10>]}
+[0m23:47:36.355290 [info ] [MainThread]: 
+[0m23:47:36.356471 [info ] [MainThread]: Running 1 on-run-start hook
+[0m23:47:36.364484 [info ] [MainThread]: Database error while running on-run-start
+[0m23:47:36.365485 [info ] [MainThread]: Concurrency: 64 threads (target='dev')
+[0m23:47:36.365485 [info ] [MainThread]: 
+[0m23:47:36.374477 [debug] [Thread-1 (]: Began running node model.answers.stg_ecommerce_orders
+[0m23:47:36.375478 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_test.stg_ecommerce_orders ..................... [RUN]
+[0m23:47:36.376478 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.answers.stg_ecommerce_orders'
+[0m23:47:36.377479 [debug] [Thread-1 (]: Began compiling node model.answers.stg_ecommerce_orders
+[0m23:47:36.379479 [debug] [Thread-1 (]: Writing injected SQL for node "model.answers.stg_ecommerce_orders"
+[0m23:47:36.384480 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (compile): 23:47:36.377479 => 23:47:36.384480
+[0m23:47:36.385480 [debug] [Thread-1 (]: Began executing node model.answers.stg_ecommerce_orders
+[0m23:47:36.415487 [debug] [Thread-1 (]: Writing runtime sql for node "model.answers.stg_ecommerce_orders"
+[0m23:47:36.419488 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:47:36.420488 [debug] [Thread-1 (]: On model.answers.stg_ecommerce_orders: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "node_id": "model.answers.stg_ecommerce_orders"} */
+
+  
+    
+
+    create or replace table `skilful-alpha-441719-r8`.`dbt_test`.`stg_ecommerce_orders`
+      
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 168 hour),
+    
+      description=""""""
+    )
+    as (
+      WITH source AS (
+	SELECT *
+
+	FROM `bigquery-public-data`.`thelook_ecommerce`.`orders`
+)
+
+SELECT
+	-- IDs
+	order_id,
+	user_id,
+
+	-- Timestamps
+	created_at,
+	returned_at,
+	delivered_at,
+	shipped_at,
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+FROM source
+    );
+  
+[0m23:47:37.276857 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:a01c5a2e-8f4a-48c2-9fdd-c7149c4db11c&page=queryresults
+[0m23:47:40.279790 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (execute): 23:47:36.385480 => 23:47:40.279790
+[0m23:47:40.281792 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '515fa7da-22be-42f8-b768-4c01d728fca2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013214782FF0>]}
+[0m23:47:40.282791 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_test.stg_ecommerce_orders ................ [[32mCREATE TABLE (124.7k rows, 6.1 MiB processed)[0m in 3.91s]
+[0m23:47:40.283791 [debug] [Thread-1 (]: Finished running node model.answers.stg_ecommerce_orders
+[0m23:47:40.288792 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:47:40.289793 [debug] [MainThread]: Connection 'create_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:47:40.290793 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:47:40.291793 [debug] [MainThread]: Connection 'model.answers.stg_ecommerce_orders' was properly closed.
+[0m23:47:40.291793 [info ] [MainThread]: 
+[0m23:47:40.293794 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.78 seconds (5.78s).
+[0m23:47:40.294795 [debug] [MainThread]: Command end result
+[0m23:47:40.412820 [info ] [MainThread]: 
+[0m23:47:40.413821 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m23:47:40.414821 [info ] [MainThread]: 
+[0m23:47:40.415820 [error] [MainThread]:   on-run-start failed, error:
+ 'get_brand_name' is undefined
+[0m23:47:40.415820 [info ] [MainThread]: 
+[0m23:47:40.416821 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m23:47:40.417821 [debug] [MainThread]: Command `dbt run` failed at 23:47:40.417821 after 6.89 seconds
+[0m23:47:40.417821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132123598E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013210129FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013214446720>]}
+[0m23:47:40.418821 [debug] [MainThread]: Flushing usage events
+[0m23:49:00.708885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F10EFA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F10EF710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F10EECF0>]}
+
+
+============================== 23:49:00.712886 | 5694247e-e457-4f1e-b9bb-4efe24097e43 ==============================
+[0m23:49:00.712886 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:49:00.713886 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:49:01.263514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F305CA40>]}
+[0m23:49:01.274516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F3138530>]}
+[0m23:49:01.276517 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:49:01.306522 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:49:01.561580 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:49:01.562580 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:49:01.563581 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.answers.marts
+[0m23:49:01.568581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F3180BC0>]}
+[0m23:49:01.608591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F3406270>]}
+[0m23:49:01.608591 [info ] [MainThread]: Found 1 model, 1 operation, 7 sources, 0 exposures, 0 metrics, 738 macros, 0 groups, 0 semantic models
+[0m23:49:01.609591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F3406660>]}
+[0m23:49:01.611591 [info ] [MainThread]: 
+[0m23:49:01.612592 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:49:01.613591 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8'
+[0m23:49:01.613591 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:49:01.984038 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_skilful-alpha-441719-r8, now create_skilful-alpha-441719-r8_dbt_test)
+[0m23:49:01.985038 [debug] [ThreadPool]: Creating schema "database: "skilful-alpha-441719-r8"
+schema: "dbt_test"
+"
+[0m23:49:01.993040 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:49:01.994040 [debug] [ThreadPool]: On create_skilful-alpha-441719-r8_dbt_test: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "connection_name": "create_skilful-alpha-441719-r8_dbt_test"} */
+create schema if not exists `skilful-alpha-441719-r8`.`dbt_test`
+  
+[0m23:49:02.382822 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:ae7717e4-40bc-4f2a-9009-65af0d6077d6&page=queryresults
+[0m23:49:03.141034 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8_dbt_test'
+[0m23:49:03.142034 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:49:03.453081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F196B230>]}
+[0m23:49:03.454082 [info ] [MainThread]: 
+[0m23:49:03.455082 [info ] [MainThread]: Running 1 on-run-start hook
+[0m23:49:03.463083 [info ] [MainThread]: Database error while running on-run-start
+[0m23:49:03.464084 [info ] [MainThread]: Concurrency: 64 threads (target='dev')
+[0m23:49:03.464084 [info ] [MainThread]: 
+[0m23:49:03.472086 [debug] [Thread-1 (]: Began running node model.answers.stg_ecommerce_orders
+[0m23:49:03.473086 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_test.stg_ecommerce_orders ..................... [RUN]
+[0m23:49:03.474087 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.answers.stg_ecommerce_orders'
+[0m23:49:03.475087 [debug] [Thread-1 (]: Began compiling node model.answers.stg_ecommerce_orders
+[0m23:49:03.478087 [debug] [Thread-1 (]: Writing injected SQL for node "model.answers.stg_ecommerce_orders"
+[0m23:49:03.483089 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (compile): 23:49:03.475087 => 23:49:03.482088
+[0m23:49:03.484089 [debug] [Thread-1 (]: Began executing node model.answers.stg_ecommerce_orders
+[0m23:49:03.513095 [debug] [Thread-1 (]: Writing runtime sql for node "model.answers.stg_ecommerce_orders"
+[0m23:49:03.518096 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:49:03.519097 [debug] [Thread-1 (]: On model.answers.stg_ecommerce_orders: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "node_id": "model.answers.stg_ecommerce_orders"} */
+
+  
+    
+
+    create or replace table `skilful-alpha-441719-r8`.`dbt_test`.`stg_ecommerce_orders`
+      
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 168 hour),
+    
+      description=""""""
+    )
+    as (
+      WITH source AS (
+	SELECT *
+
+	FROM `bigquery-public-data`.`thelook_ecommerce`.`orders`
+)
+
+SELECT
+	-- IDs
+	order_id,
+	user_id,
+
+	-- Timestamps
+	created_at,
+	returned_at,
+	delivered_at,
+	shipped_at,
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+FROM source
+    );
+  
+[0m23:49:04.360624 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:426bc118-91bd-4e08-a0f4-8e381409291f&page=queryresults
+[0m23:49:07.380041 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (execute): 23:49:03.484089 => 23:49:07.380041
+[0m23:49:07.381042 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5694247e-e457-4f1e-b9bb-4efe24097e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F34180B0>]}
+[0m23:49:07.382042 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_test.stg_ecommerce_orders ................ [[32mCREATE TABLE (124.7k rows, 6.1 MiB processed)[0m in 3.91s]
+[0m23:49:07.383041 [debug] [Thread-1 (]: Finished running node model.answers.stg_ecommerce_orders
+[0m23:49:07.386042 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:49:07.386042 [debug] [MainThread]: Connection 'create_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:49:07.387042 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m23:49:07.387042 [debug] [MainThread]: Connection 'model.answers.stg_ecommerce_orders' was properly closed.
+[0m23:49:07.388042 [info ] [MainThread]: 
+[0m23:49:07.388042 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.78 seconds (5.78s).
+[0m23:49:07.389043 [debug] [MainThread]: Command end result
+[0m23:49:07.478062 [info ] [MainThread]: 
+[0m23:49:07.479063 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m23:49:07.479063 [info ] [MainThread]: 
+[0m23:49:07.480063 [error] [MainThread]:   on-run-start failed, error:
+ 'get_brand_name' is undefined
+[0m23:49:07.481063 [info ] [MainThread]: 
+[0m23:49:07.481063 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m23:49:07.482063 [debug] [MainThread]: Command `dbt run` failed at 23:49:07.482063 after 6.84 seconds
+[0m23:49:07.483064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F0FDD550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8EFFC1CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F0B4A000>]}
+[0m23:49:07.483064 [debug] [MainThread]: Flushing usage events
+[0m23:54:10.327348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225AE7EE540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225AE7EE4E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225AE7EEC30>]}
+
+
+============================== 23:54:10.334349 | 3062605e-0154-4089-a736-148263c976c7 ==============================
+[0m23:54:10.334349 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:54:10.335349 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'profiles_dir': '.', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:54:10.889516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3062605e-0154-4089-a736-148263c976c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225B05F83E0>]}
+[0m23:54:10.900518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3062605e-0154-4089-a736-148263c976c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225B08A0770>]}
+[0m23:54:10.901519 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:54:10.928525 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:54:11.183582 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m23:54:11.184582 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_generate_base_table.sql
+[0m23:54:11.185582 [debug] [MainThread]: Partial parsing: updated file: answers://models\staging\stg_ecommerce_orders.yml
+[0m23:54:11.283603 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Documentation for 'model.answers.stg_ecommerce_orders' depends on doc 'status'  which was not found
+[0m23:54:11.284604 [debug] [MainThread]: Command `dbt run` failed at 23:54:11.284604 after 1.08 seconds
+[0m23:54:11.285603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225AE048680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225B06545C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225B0BA4110>]}
+[0m23:54:11.285603 [debug] [MainThread]: Flushing usage events
+[0m23:55:50.049425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53CB516D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53CE4EC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53CE4E7E0>]}
+
+
+============================== 23:55:50.053427 | 850c3559-f251-4c26-8302-bf2cf948430d ==============================
+[0m23:55:50.053427 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:55:50.054427 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:55:50.590547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '850c3559-f251-4c26-8302-bf2cf948430d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53D40E390>]}
+[0m23:55:50.601549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '850c3559-f251-4c26-8302-bf2cf948430d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53EE85D30>]}
+[0m23:55:50.603550 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:55:50.631556 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:55:50.900791 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m23:55:50.900791 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_is_weekend.sql
+[0m23:55:50.901792 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_get_brand_name.sql
+[0m23:55:50.901792 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_generate_base_table.sql
+[0m23:55:50.902792 [debug] [MainThread]: Partial parsing: updated file: answers://models\staging\stg_ecommerce_orders.yml
+[0m23:55:51.002814 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Documentation for 'model.answers.stg_ecommerce_orders' depends on doc 'status'  which was not found
+[0m23:55:51.003814 [debug] [MainThread]: Command `dbt run` failed at 23:55:51.003814 after 1.02 seconds
+[0m23:55:51.004814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53CDA44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53F1954C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E53F1CFE60>]}
+[0m23:55:51.004814 [debug] [MainThread]: Flushing usage events
+[0m23:56:23.020857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9C68EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9A11C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9C68F260>]}
+
+
+============================== 23:56:23.024857 | ddece19c-21dd-4bc0-ad86-8762681a58eb ==============================
+[0m23:56:23.024857 [info ] [MainThread]: Running with dbt=1.6.18
+[0m23:56:23.025858 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '.', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:56:23.557977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ddece19c-21dd-4bc0-ad86-8762681a58eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9E448A40>]}
+[0m23:56:23.568979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ddece19c-21dd-4bc0-ad86-8762681a58eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9E7077D0>]}
+[0m23:56:23.569979 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m23:56:23.597986 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m23:56:23.853548 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m23:56:23.854548 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_is_weekend.sql
+[0m23:56:23.855548 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_get_brand_name.sql
+[0m23:56:23.855548 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_generate_base_table.sql
+[0m23:56:23.856548 [debug] [MainThread]: Partial parsing: updated file: answers://models\staging\stg_ecommerce_orders.yml
+[0m23:56:23.955571 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Documentation for 'model.answers.stg_ecommerce_orders' depends on doc 'status'  which was not found
+[0m23:56:23.956572 [debug] [MainThread]: Command `dbt run` failed at 23:56:23.956572 after 1.00 seconds
+[0m23:56:23.957572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9C3646B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9EA17C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E9EA5C170>]}
+[0m23:56:23.957572 [debug] [MainThread]: Flushing usage events
+[0m00:04:57.300818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A4D8FFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A4D8F0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A4D8FA70>]}
+
+
+============================== 00:04:57.304818 | 059ae3d8-e022-48f9-b802-bd19dc1871ea ==============================
+[0m00:04:57.304818 [info ] [MainThread]: Running with dbt=1.6.18
+[0m00:04:57.305819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-Bigquery\\answers\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_ecommerce_orders --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:04:57.855943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A6B8E4E0>]}
+[0m00:04:57.867945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A6D7DC70>]}
+[0m00:04:57.868945 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m00:04:57.898952 [debug] [MainThread]: checksum: 7b9fab86a08e9e96a48a825af743c566d95b877e068b8c6d0dbafbf714447189, vars: {}, profile: , target: , version: 1.6.18
+[0m00:04:58.170520 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 1 files changed.
+[0m00:04:58.171520 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_is_weekend.sql
+[0m00:04:58.172520 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_get_brand_name.sql
+[0m00:04:58.172520 [debug] [MainThread]: Partial parsing: added file: answers://macros\macro_generate_base_table.sql
+[0m00:04:58.173521 [debug] [MainThread]: Partial parsing: added file: answers://models\documents\ecommerce\doc_ecommerce__status.md
+[0m00:04:58.173521 [debug] [MainThread]: Partial parsing: updated file: answers://models\staging\stg_ecommerce_orders.yml
+[0m00:04:58.330556 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.answers.marts
+[0m00:04:58.336557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A7097260>]}
+[0m00:04:58.375566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A706AF30>]}
+[0m00:04:58.376566 [info ] [MainThread]: Found 1 model, 1 operation, 14 tests, 7 sources, 0 exposures, 0 metrics, 741 macros, 0 groups, 0 semantic models
+[0m00:04:58.377566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A706B0B0>]}
+[0m00:04:58.379567 [info ] [MainThread]: 
+[0m00:04:58.380568 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:04:58.381567 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8'
+[0m00:04:58.381567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:04:58.786821 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_skilful-alpha-441719-r8, now create_skilful-alpha-441719-r8_dbt_test)
+[0m00:04:58.787821 [debug] [ThreadPool]: Creating schema "database: "skilful-alpha-441719-r8"
+schema: "dbt_test"
+"
+[0m00:04:58.795823 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:04:58.796823 [debug] [ThreadPool]: On create_skilful-alpha-441719-r8_dbt_test: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "connection_name": "create_skilful-alpha-441719-r8_dbt_test"} */
+create schema if not exists `skilful-alpha-441719-r8`.`dbt_test`
+  
+[0m00:04:59.216422 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:a21310a1-5a39-4602-ad2d-b782111c0fa1&page=queryresults
+[0m00:04:59.998471 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_skilful-alpha-441719-r8_dbt_test'
+[0m00:04:59.999470 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:05:00.329616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A4B28860>]}
+[0m00:05:00.330617 [info ] [MainThread]: 
+[0m00:05:00.331616 [info ] [MainThread]: Running 1 on-run-start hook
+[0m00:05:00.338618 [debug] [MainThread]: Writing injected SQL for node "operation.answers.answers-on-run-start-0"
+[0m00:05:00.342619 [info ] [MainThread]: 1 of 1 START hook: answers.on-run-start.0 ...................................... [RUN]
+[0m00:05:00.343619 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:05:00.344619 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "connection_name": "master"} */
+
+	CREATE OR REPLACE FUNCTION dbt_test.get_brand_name(web_link STRING)
+	RETURNS STRING
+	AS (
+		REGEXP_EXTRACT(web_link, r'.+/brand/(.+)')
+	)
+
+[0m00:05:00.811770 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:c44bd52c-7cc7-4b9c-a461-3fbd582a5294&page=queryresults
+[0m00:05:01.143580 [info ] [MainThread]: 1 of 1 OK hook: answers.on-run-start.0 ......................................... [[32mNone (0 processed)[0m in 0.80s]
+[0m00:05:01.143580 [info ] [MainThread]: 
+[0m00:05:01.145581 [info ] [MainThread]: Concurrency: 64 threads (target='dev')
+[0m00:05:01.145581 [info ] [MainThread]: 
+[0m00:05:01.154583 [debug] [Thread-1 (]: Began running node model.answers.stg_ecommerce_orders
+[0m00:05:01.154583 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_test.stg_ecommerce_orders ..................... [RUN]
+[0m00:05:01.155583 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.answers.stg_ecommerce_orders'
+[0m00:05:01.156583 [debug] [Thread-1 (]: Began compiling node model.answers.stg_ecommerce_orders
+[0m00:05:01.159585 [debug] [Thread-1 (]: Writing injected SQL for node "model.answers.stg_ecommerce_orders"
+[0m00:05:01.164585 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (compile): 00:05:01.156583 => 00:05:01.164585
+[0m00:05:01.164585 [debug] [Thread-1 (]: Began executing node model.answers.stg_ecommerce_orders
+[0m00:05:01.195592 [debug] [Thread-1 (]: Writing runtime sql for node "model.answers.stg_ecommerce_orders"
+[0m00:05:01.200594 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:05:01.200594 [debug] [Thread-1 (]: On model.answers.stg_ecommerce_orders: /* {"app": "dbt", "dbt_version": "1.6.18", "profile_name": "answers", "target_name": "dev", "node_id": "model.answers.stg_ecommerce_orders"} */
+
+  
+    
+
+    create or replace table `skilful-alpha-441719-r8`.`dbt_test`.`stg_ecommerce_orders`
+      
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 168 hour),
+    
+      description=""""""
+    )
+    as (
+      WITH source AS (
+	SELECT *
+
+	FROM `bigquery-public-data`.`thelook_ecommerce`.`orders`
+)
+
+SELECT
+	-- IDs
+	order_id,
+	user_id,
+
+	-- Timestamps
+	created_at,
+	returned_at,
+	delivered_at,
+	shipped_at,
+
+	-- Other columns
+	status,
+	num_of_item AS num_items_ordered
+
+FROM source
+    );
+  
+[0m00:05:02.062653 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:b3f17224-e144-4f2d-8dcb-dbc3375b20bf&page=queryresults
+[0m00:05:06.257226 [debug] [Thread-1 (]: Timing info for model.answers.stg_ecommerce_orders (execute): 00:05:01.165586 => 00:05:06.257226
+[0m00:05:06.258226 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '059ae3d8-e022-48f9-b802-bd19dc1871ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A6D7FA70>]}
+[0m00:05:06.259226 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_test.stg_ecommerce_orders ................ [[32mCREATE TABLE (124.7k rows, 6.1 MiB processed)[0m in 5.10s]
+[0m00:05:06.260227 [debug] [Thread-1 (]: Finished running node model.answers.stg_ecommerce_orders
+[0m00:05:06.263668 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:05:06.263668 [debug] [MainThread]: Connection 'create_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m00:05:06.264668 [debug] [MainThread]: Connection 'list_skilful-alpha-441719-r8_dbt_test' was properly closed.
+[0m00:05:06.264668 [debug] [MainThread]: Connection 'model.answers.stg_ecommerce_orders' was properly closed.
+[0m00:05:06.265668 [info ] [MainThread]: 
+[0m00:05:06.265668 [info ] [MainThread]: Finished running 1 table model, 1 hook in 0 hours 0 minutes and 7.89 seconds (7.89s).
+[0m00:05:06.267669 [debug] [MainThread]: Command end result
+[0m00:05:06.300676 [info ] [MainThread]: 
+[0m00:05:06.301677 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:05:06.301677 [info ] [MainThread]: 
+[0m00:05:06.302676 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m00:05:06.303677 [debug] [MainThread]: Command `dbt run` succeeded at 00:05:06.303677 after 9.08 seconds
+[0m00:05:06.303677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F39EAB6B70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A70BCAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3A57E4200>]}
+[0m00:05:06.304677 [debug] [MainThread]: Flushing usage events
