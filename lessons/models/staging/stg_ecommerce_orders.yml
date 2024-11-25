@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_ecommerce__orders
+  - name: stg_ecommerce_orders
     description: "Table of 1 row per order"
     columns:
       - name: order_id

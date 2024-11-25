@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_ecommerce__order_items
+  - name: stg_ecommerce_order_items
     description: "Line items from orders"
     columns:
       - name: order_item_id
