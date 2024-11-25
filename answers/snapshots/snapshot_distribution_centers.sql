@@ -1,4 +1,4 @@
-{% snapshot snapshot__distribution_centers %}
+{% snapshot snapshot_distribution_centers %}
 
 {{
     config(

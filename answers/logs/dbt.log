@@ -1554,3 +1554,367 @@ Update your versions in packages.yml, then run dbt deps
 [0m13:46:51.413867 [debug] [MainThread]: Command `dbt deps` succeeded at 13:46:51.413867 after 3.81 seconds
 [0m13:46:51.414868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A7456030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A7519220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A769B170>]}
 [0m13:46:51.415868 [debug] [MainThread]: Flushing usage events
+[0m15:44:46.540098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69E19D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69CFC3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69EF26F0>]}
+
+
+============================== 15:44:46.655423 | c1f7ce2a-a930-4c27-8766-f5e6ecd21f9b ==============================
+[0m15:44:46.655423 [info ] [MainThread]: Running with dbt=1.6.18
+[0m15:44:46.657428 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:44:46.658428 [info ] [MainThread]: dbt version: 1.6.18
+[0m15:44:46.658428 [info ] [MainThread]: python version: 3.12.4
+[0m15:44:46.659428 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m15:44:46.660428 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:44:46.667430 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m15:44:46.668431 [debug] [MainThread]: Command `dbt debug` failed at 15:44:46.668431 after 0.25 seconds
+[0m15:44:46.668431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69C52000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69AFED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F69EF2CF0>]}
+[0m15:44:46.669430 [debug] [MainThread]: Flushing usage events
+[0m15:47:40.163001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27BA2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27BA2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27BA2FF0>]}
+
+
+============================== 15:47:40.168003 | 7956da83-9e24-4510-b8b9-d61455ae4f86 ==============================
+[0m15:47:40.168003 [info ] [MainThread]: Running with dbt=1.6.18
+[0m15:47:40.169003 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:47:40.169003 [info ] [MainThread]: dbt version: 1.6.18
+[0m15:47:40.170003 [info ] [MainThread]: python version: 3.12.4
+[0m15:47:40.171003 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m15:47:40.171003 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:47:40.178005 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m15:47:40.179005 [debug] [MainThread]: Command `dbt debug` failed at 15:47:40.179005 after 0.13 seconds
+[0m15:47:40.180005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27AF44A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27939910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C27A69DC0>]}
+[0m15:47:40.180005 [debug] [MainThread]: Flushing usage events
+[0m16:00:24.609220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B65F2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B65F2CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B65F2EA0>]}
+
+
+============================== 16:00:24.613221 | 2007209d-bc82-4c8f-b861-77584db8e1b9 ==============================
+[0m16:00:24.613221 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:00:24.614222 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:00:24.615221 [info ] [MainThread]: dbt version: 1.6.18
+[0m16:00:24.616227 [info ] [MainThread]: python version: 3.12.4
+[0m16:00:24.617222 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m16:00:24.617222 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:00:24.624224 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m16:00:24.625224 [debug] [MainThread]: Command `dbt debug` failed at 16:00:24.625224 after 0.14 seconds
+[0m16:00:24.626224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B6276030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B61B89E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200B65F2ED0>]}
+[0m16:00:24.627224 [debug] [MainThread]: Flushing usage events
+[0m16:01:17.834339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC365250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC336120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC528380>]}
+
+
+============================== 16:01:17.838339 | a66d014e-ce49-40e8-91a0-f9bb3d73b9fe ==============================
+[0m16:01:17.838339 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:01:17.839340 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:01:17.840341 [info ] [MainThread]: dbt version: 1.6.18
+[0m16:01:17.840341 [info ] [MainThread]: python version: 3.12.4
+[0m16:01:17.841341 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m16:01:17.841341 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:01:17.848342 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m16:01:17.849344 [debug] [MainThread]: Command `dbt debug` failed at 16:01:17.849344 after 0.13 seconds
+[0m16:01:17.850343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC4F2570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC334EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CCC662AB0>]}
+[0m16:01:17.850343 [debug] [MainThread]: Flushing usage events
+[0m16:01:47.381718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E723560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8C1EE270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E26C3E0>]}
+
+
+============================== 16:01:47.385719 | 8d556b48-39ff-46db-9d03-711b23e524df ==============================
+[0m16:01:47.385719 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:01:47.387719 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:01:47.497744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8d556b48-39ff-46db-9d03-711b23e524df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E63B140>]}
+[0m16:01:48.214413 [debug] [MainThread]: Command `dbt clean` succeeded at 16:01:48.214413 after 0.94 seconds
+[0m16:01:48.215412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E64A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E23E8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B8E4FF680>]}
+[0m16:01:48.216412 [debug] [MainThread]: Flushing usage events
+[0m16:01:51.900684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0633E3320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0631BE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0632CEBD0>]}
+
+
+============================== 16:01:51.904685 | 904223c3-1e20-42d9-9273-ab4c4fde5c00 ==============================
+[0m16:01:51.904685 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:01:51.905686 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:01:52.018710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '904223c3-1e20-42d9-9273-ab4c4fde5c00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0633085C0>]}
+[0m16:01:52.021711 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-35m3humd'
+[0m16:01:52.022712 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:01:52.165441 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:01:52.166442 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:01:52.213499 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:01:52.217499 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m16:01:52.281779 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m16:01:52.284779 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:01:52.341792 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:01:52.343792 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m16:01:52.405806 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m16:01:52.418809 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:01:53.952470 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+[0m16:01:53.960472 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 126, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\requires.py", line 172, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\cli\main.py", line 462, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\task\deps.py", line 81, in run
+    package.install(self.project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\registry.py", line 60, in install
+    self._install(project, renderer)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 117, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\utils.py", line 601, in _connection_exception_retry
+    return fn()
+           ^^^^
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\deps\base.py", line 129, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 505, in untar_package
+    dbt.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "D:\Learning\Git\dbt-test-Bigquery\venv\Lib\site-packages\dbt\clients\system.py", line 493, in rename
+    shutil.move(from_path, to_path)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 865, in move
+    rmtree(src)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+  File "D:\Softwares\anaconda3\Lib\shutil.py", line 627, in _rmtree_unsafe
+    os.rmdir(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.0.0\\integration_tests'
+
+[0m16:01:53.964474 [debug] [MainThread]: Command `dbt deps` failed at 16:01:53.964474 after 2.18 seconds
+[0m16:01:53.965474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0631BDCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0634386E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E063066150>]}
+[0m16:01:53.966474 [debug] [MainThread]: Flushing usage events
+[0m16:05:51.974479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC8842DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC80A43E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC8842A80>]}
+
+
+============================== 16:05:51.979482 | 58e4e049-5559-452c-b8c5-570d2ac92c5a ==============================
+[0m16:05:51.979482 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:05:51.980480 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:05:52.093507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '58e4e049-5559-452c-b8c5-570d2ac92c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC85463C0>]}
+[0m16:05:52.433906 [debug] [MainThread]: Command `dbt clean` succeeded at 16:05:52.433906 after 0.57 seconds
+[0m16:05:52.433906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC849ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC8731220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EC7D37A70>]}
+[0m16:05:52.434906 [debug] [MainThread]: Flushing usage events
+[0m16:05:56.168939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894CD5C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D77D3A0>]}
+
+
+============================== 16:05:56.172940 | d9e72a9d-3e3e-41e7-9d4c-550f381c8fbc ==============================
+[0m16:05:56.172940 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:05:56.173941 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt deps', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:05:56.282965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9e72a9d-3e3e-41e7-9d4c-550f381c8fbc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D7B9760>]}
+[0m16:05:56.285966 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-d7njst8t'
+[0m16:05:56.286966 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:05:56.396139 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:05:56.397140 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:05:56.449101 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:05:56.453103 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m16:05:56.504415 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m16:05:56.507416 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:05:56.563461 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:05:56.565462 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m16:05:56.622546 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m16:05:56.634549 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:05:58.159264 [info ] [MainThread]: Installed from version 1.0.0
+[0m16:05:58.160264 [info ] [MainThread]: Updated version available: 1.3.0
+[0m16:05:58.161264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9e72a9d-3e3e-41e7-9d4c-550f381c8fbc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894DD16C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894DD170B0>]}
+[0m16:05:58.162264 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m16:05:59.320734 [info ] [MainThread]: Installed from version 0.8.5
+[0m16:05:59.321734 [info ] [MainThread]: Updated version available: 0.10.4
+[0m16:05:59.322734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9e72a9d-3e3e-41e7-9d4c-550f381c8fbc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894DCF0F50>]}
+[0m16:05:59.323734 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m16:05:59.756537 [info ] [MainThread]: Installed from version 0.9.0
+[0m16:05:59.757538 [info ] [MainThread]: Updated version available: 0.12.1
+[0m16:05:59.757538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9e72a9d-3e3e-41e7-9d4c-550f381c8fbc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892E10>]}
+[0m16:05:59.758538 [info ] [MainThread]: Installing calogica/dbt_date
+[0m16:06:00.225241 [info ] [MainThread]: Installed from version 0.7.2
+[0m16:06:00.226241 [info ] [MainThread]: Updated version available: 0.10.1
+[0m16:06:00.227242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9e72a9d-3e3e-41e7-9d4c-550f381c8fbc', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D892E10>]}
+[0m16:06:00.228242 [info ] [MainThread]: 
+[0m16:06:00.229242 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_expectations', 'dbt-labs/codegen', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m16:06:00.254816 [debug] [MainThread]: Command `dbt deps` succeeded at 16:06:00.254816 after 4.20 seconds
+[0m16:06:00.254816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D5BC4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D49E840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002894D723830>]}
+[0m16:06:00.255815 [debug] [MainThread]: Flushing usage events
+[0m16:31:12.473706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D2102420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D1E2C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D21024E0>]}
+
+
+============================== 16:31:12.477706 | 7416eed7-a76b-4ed6-bba5-8e955df7dd2e ==============================
+[0m16:31:12.477706 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:31:12.478706 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:31:12.587731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7416eed7-a76b-4ed6-bba5-8e955df7dd2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D1E60800>]}
+[0m16:31:12.590732 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-05ffup24'
+[0m16:31:12.591731 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:31:12.700807 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:31:12.701808 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:31:12.752819 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:31:12.755820 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m16:31:12.800375 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m16:31:12.804375 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:31:12.841384 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:31:12.843384 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m16:31:12.896397 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m16:31:12.907902 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:31:14.244630 [info ] [MainThread]: Installed from version 1.0.0
+[0m16:31:14.245630 [info ] [MainThread]: Updated version available: 1.3.0
+[0m16:31:14.246631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7416eed7-a76b-4ed6-bba5-8e955df7dd2e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D2054320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D2142420>]}
+[0m16:31:14.246631 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m16:31:15.506967 [info ] [MainThread]: Installed from version 0.8.5
+[0m16:31:15.507968 [info ] [MainThread]: Updated version available: 0.10.4
+[0m16:31:15.507968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7416eed7-a76b-4ed6-bba5-8e955df7dd2e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D201BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D2054320>]}
+[0m16:31:15.508969 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m16:31:15.988684 [info ] [MainThread]: Installed from version 0.9.0
+[0m16:31:15.989684 [info ] [MainThread]: Updated version available: 0.12.1
+[0m16:31:15.990685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7416eed7-a76b-4ed6-bba5-8e955df7dd2e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D201BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D217EC00>]}
+[0m16:31:15.990685 [info ] [MainThread]: Installing calogica/dbt_date
+[0m16:31:16.516048 [info ] [MainThread]: Installed from version 0.7.2
+[0m16:31:16.524297 [info ] [MainThread]: Updated version available: 0.10.1
+[0m16:31:16.525300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7416eed7-a76b-4ed6-bba5-8e955df7dd2e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D201BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D1E2E450>]}
+[0m16:31:16.525300 [info ] [MainThread]: 
+[0m16:31:16.526300 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_expectations', 'dbt-labs/codegen', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m16:31:16.554661 [debug] [MainThread]: Command `dbt deps` succeeded at 16:31:16.554661 after 4.19 seconds
+[0m16:31:16.555661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D2054320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D202A030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D1E2C140>]}
+[0m16:31:16.556661 [debug] [MainThread]: Flushing usage events
+[0m16:31:27.720142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC51102630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC50FED3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC51103260>]}
+
+
+============================== 16:31:27.724143 | d609de74-2c39-4907-9355-53ba53bfe9df ==============================
+[0m16:31:27.724143 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:31:27.725143 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt clean', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:31:27.843169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd609de74-2c39-4907-9355-53ba53bfe9df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC4EC108F0>]}
+[0m16:31:28.535772 [debug] [MainThread]: Command `dbt clean` succeeded at 16:31:28.535772 after 0.92 seconds
+[0m16:31:28.536772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC50EDE2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC50E2C860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC50407BC0>]}
+[0m16:31:28.536772 [debug] [MainThread]: Flushing usage events
+[0m16:31:32.106396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E02F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E02AB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E03590>]}
+
+
+============================== 16:31:32.110396 | 989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376 ==============================
+[0m16:31:32.110396 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:31:32.111396 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'debug': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:31:32.224422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F5498C740>]}
+[0m16:31:32.227423 [debug] [MainThread]: Set downloads directory='C:\Users\snehi\AppData\Local\Temp\dbt-downloads-yms7ox94'
+[0m16:31:32.227423 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:31:32.305443 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:31:32.306444 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:31:32.376775 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:31:32.380777 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m16:31:32.427282 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m16:31:32.430284 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:31:32.478077 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:31:32.480025 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m16:31:32.525820 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m16:31:32.537822 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:31:33.441456 [info ] [MainThread]: Installed from version 1.0.0
+[0m16:31:33.442457 [info ] [MainThread]: Updated version available: 1.3.0
+[0m16:31:33.443457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54AD6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E40BC0>]}
+[0m16:31:33.444457 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m16:31:34.543277 [info ] [MainThread]: Installed from version 0.8.5
+[0m16:31:34.543277 [info ] [MainThread]: Updated version available: 0.10.4
+[0m16:31:34.544277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54AD6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E40BC0>]}
+[0m16:31:34.545277 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m16:31:35.034626 [info ] [MainThread]: Installed from version 0.9.0
+[0m16:31:35.035627 [info ] [MainThread]: Updated version available: 0.12.1
+[0m16:31:35.035627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54AD6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E41F70>]}
+[0m16:31:35.036627 [info ] [MainThread]: Installing calogica/dbt_date
+[0m16:31:35.427290 [info ] [MainThread]: Installed from version 0.7.2
+[0m16:31:35.428291 [info ] [MainThread]: Updated version available: 0.10.1
+[0m16:31:35.429291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '989dfbe4-4376-4b8e-9f1f-fb1e0b9ef376', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E41D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F54E40BC0>]}
+[0m16:31:35.429291 [info ] [MainThread]: 
+[0m16:31:35.434292 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_expectations', 'dbt-labs/codegen', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m16:31:35.461673 [debug] [MainThread]: Command `dbt deps` succeeded at 16:31:35.461673 after 3.46 seconds
+[0m16:31:35.462673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F51E697F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F4ECC6AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F548A6030>]}
+[0m16:31:35.463674 [debug] [MainThread]: Flushing usage events
+[0m16:32:29.776187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026787082F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026786DAC3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026786E5E120>]}
+
+
+============================== 16:32:29.780188 | fcc5565a-c917-4fe4-923b-214a9a1f84aa ==============================
+[0m16:32:29.780188 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:32:29.781188 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:29.782189 [info ] [MainThread]: dbt version: 1.6.18
+[0m16:32:29.783189 [info ] [MainThread]: python version: 3.12.4
+[0m16:32:29.783189 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m16:32:29.784189 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:32:29.791190 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'BIGQUERY_PROJECT'
+[0m16:32:29.792191 [debug] [MainThread]: Command `dbt debug` failed at 16:32:29.792191 after 0.13 seconds
+[0m16:32:29.792191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267864CCBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026780971850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026786F6D340>]}
+[0m16:32:29.793191 [debug] [MainThread]: Flushing usage events
+[0m16:45:22.177017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002826E8F77D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002826E8F67B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002826E8F64B0>]}
+
+
+============================== 16:45:22.181017 | f5688cf1-6b60-418d-89df-85595f9f9958 ==============================
+[0m16:45:22.181017 [info ] [MainThread]: Running with dbt=1.6.18
+[0m16:45:22.182017 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Learning\\Git\\dbt-test-BigQuery\\answers\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:45:22.183018 [info ] [MainThread]: dbt version: 1.6.18
+[0m16:45:22.184019 [info ] [MainThread]: python version: 3.12.4
+[0m16:45:22.184019 [info ] [MainThread]: python path: D:\Learning\Git\dbt-test-Bigquery\venv\Scripts\python.exe
+[0m16:45:22.185018 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:45:22.700133 [info ] [MainThread]: Using profiles dir at D:\Learning\Git\dbt-test-BigQuery\answers
+[0m16:45:22.701133 [info ] [MainThread]: Using profiles.yml file at D:\Learning\Git\dbt-test-BigQuery\answers\profiles.yml
+[0m16:45:22.701133 [info ] [MainThread]: Using dbt_project.yml file at D:\Learning\Git\dbt-test-BigQuery\answers\dbt_project.yml
+[0m16:45:22.703134 [info ] [MainThread]: adapter type: bigquery
+[0m16:45:22.703134 [info ] [MainThread]: adapter version: 1.6.1
+[0m16:45:22.728140 [info ] [MainThread]: Configuration:
+[0m16:45:22.729140 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:45:22.730140 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:45:22.731140 [info ] [MainThread]: Required dependencies:
+[0m16:45:22.731140 [debug] [MainThread]: Executing "git --help"
+[0m16:45:22.768148 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:45:22.769148 [debug] [MainThread]: STDERR: "b''"
+[0m16:45:22.769148 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:45:22.770149 [info ] [MainThread]: Connection:
+[0m16:45:22.771149 [info ] [MainThread]:   method: oauth
+[0m16:45:22.771149 [info ] [MainThread]:   database: skilful-alpha-441719-r8
+[0m16:45:22.772149 [info ] [MainThread]:   execution_project: skilful-alpha-441719-r8
+[0m16:45:22.773149 [info ] [MainThread]:   schema: dbt_test
+[0m16:45:22.773149 [info ] [MainThread]:   location: US
+[0m16:45:22.774149 [info ] [MainThread]:   priority: interactive
+[0m16:45:22.775150 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:45:22.775150 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:45:22.776150 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:45:22.777150 [info ] [MainThread]:   job_retries: 1
+[0m16:45:22.777150 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:45:22.778151 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:45:22.779151 [info ] [MainThread]:   keyfile: None
+[0m16:45:22.779151 [info ] [MainThread]:   keyfile_json: None
+[0m16:45:22.780151 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:45:22.781152 [info ] [MainThread]:   token: None
+[0m16:45:22.781152 [info ] [MainThread]:   refresh_token: None
+[0m16:45:22.782151 [info ] [MainThread]:   client_id: None
+[0m16:45:22.782151 [info ] [MainThread]:   client_secret: None
+[0m16:45:22.783152 [info ] [MainThread]:   token_uri: None
+[0m16:45:22.784152 [info ] [MainThread]:   dataproc_region: None
+[0m16:45:22.784152 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:45:22.785152 [info ] [MainThread]:   gcs_bucket: None
+[0m16:45:22.785152 [info ] [MainThread]:   dataproc_batch: None
+[0m16:45:22.786153 [info ] [MainThread]: Registered adapter: bigquery=1.6.1
+[0m16:45:22.787153 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:45:22.787153 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:45:22.791154 [debug] [MainThread]: On debug: select 1 as id
+[0m16:45:23.466444 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=skilful-alpha-441719-r8&j=bq:US:c43cd409-a672-437a-9f06-52bb6ca326d3&page=queryresults
+[0m16:45:23.866567 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:45:23.867568 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:45:23.868567 [debug] [MainThread]: Command `dbt debug` succeeded at 16:45:23.868567 after 1.81 seconds
+[0m16:45:23.868567 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:45:23.869568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002826E91D160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002826F37B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282708A30B0>]}
+[0m16:45:23.870568 [debug] [MainThread]: Flushing usage events
