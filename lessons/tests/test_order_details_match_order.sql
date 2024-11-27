@@ -9,7 +9,7 @@ WITH order_details AS (
 
 SELECT
 	o.order_id,
-	od.num_items_ordered,
+	o.num_items_ordered,
 	od.num_of_items_in_order
 
 FROM {{ ref('stg_ecommerce_orders') }} AS o
