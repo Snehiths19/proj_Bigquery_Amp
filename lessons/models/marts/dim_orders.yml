@@ -16,7 +16,7 @@ models:
           - primary_key:
               severity: error
           - relationships:
-              to: ref('stg_ecommerce__orders')
+              to: ref('stg_ecommerce_orders')
               field: order_id
               severity: error
 
@@ -39,7 +39,7 @@ models:
         description: "Number of items in the order"
 
 
-    # Columns from int_ecommerce__order_items_product
+    # Columns from int_ecommerce_order_items_product
     # We should test these columns as they're new
       - name: total_sale_price
         description: "Sum of item_sale_price for the whole order"
