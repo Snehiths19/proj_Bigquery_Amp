@@ -4,4 +4,5 @@
 logs
 
 answers/logs/dbt.log
-/answers
+answers/
+
