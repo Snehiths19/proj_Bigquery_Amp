@@ -1,4 +1,4 @@
-# E-Commerce Analytics Project
+# Amplitude Analytics Project
 
 This project addresses a **Customer Segmentation problem** relevant to the **Product Growth**: identifying high-value customers and understanding their journey to improve marketing and product growth strategies. I have performed **RFM Analysis** and prepared data for **Amplitude integration**, where the goal is to utilize Attribution modeling to identify ideal customer journey.
 
