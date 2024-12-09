@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: RFM_Segmentation
+    description: "RFM segmentation analysis based on recency, frequency, and monetary values"
+    columns:
+      - name: user_id
+        description: "Unique identifier for a user"
+        tests:
+          - not_null
+
+      - name: recency
+        description: "The most recent order date for the user"
+        tests:
+          - not_null
+
+      - name: frequency
+        description: "Number of orders placed by the user"
+        tests:
+          - not_null
+
+      - name: monetary
+        description: "Total monetary value of orders placed by the user"
+        tests:
+          - not_null
+
+      - name: recency_days
+        description: "Number of days since the most recent order"
+        tests:
+          - not_null
+
+      - name: recency_score
+        description: "Score based on the recency of the user's orders"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 5
+
+      - name: frequency_score
+        description: "Score based on the frequency of the user's orders"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 5
+
+      - name: monetary_score
+        description: "Score based on the monetary value of the user's orders"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 5
+
+      - name: rfm_score
+        description: "Combined RFM score"
+        tests:
+          - not_null
+
+      - name: segment
+        description: "Segment of the user based on the RFM score"
+        tests:
+          - not_null
+
+      - name: priority
+        description: "Priority of the user based on the segment"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 13

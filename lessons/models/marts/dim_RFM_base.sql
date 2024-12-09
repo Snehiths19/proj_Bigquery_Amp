@@ -20,14 +20,19 @@ SELECT
 	od.delivered_at AS order_delivered_at,
 	od.returned_at AS order_returned_at,
 	od.status AS order_status,
-	od.num_items_ordered,
+	om.total_discount,
 	om.total_sale_price,
 	om.total_product_cost,
-	om.total_profit,
-	om.total_discount,
 
-	-- In practise we'd calculate this column in the model itself, but it's
-	-- a good way to demonstrate how to use an ephemeral materialisation
+	user_data.first_order_created_at,
+
+	user_data.last_order_created_at as recency,
+	od.num_items_ordered as frequency,
+	om.total_profit as monetary,
+	user_data.user_id,
+
+
+
 	TIMESTAMP_DIFF(od.created_at, user_data.first_order_created_at, DAY) AS days_since_first_order
 
 FROM {{ ref('stg_ecommerce_orders') }} AS od

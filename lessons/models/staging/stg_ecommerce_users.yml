@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: stg_ecommerce_users
+    description: "Table of users on the online store"
+    columns:
+      - name: user_id
+        tests:
+          - primary_key:
+              severity: error
+
+      - name: age
+        description: "Age of the user"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: gender
+        description: "Gender of the user"
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - F
+                - M
+              quote: true
+
+      - name: city
+        description: "City of the user"
+        tests:
+          - not_null
+
+      - name: state
+        description: "State of the user"
+        tests:
+          - not_null
+
+      - name: country
+        description: "Country of the user"
+        tests:
+          - not_null
+
+      - name: traffic_source
+        description: "Source of traffic for the user"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "When the user was created"
+        tests:
+          - not_null

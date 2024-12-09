@@ -68,7 +68,7 @@ models:
               expression: "= (product_retail_price - item_sale_price)"
 
 
-  - name: int_ecommerce_first_order_created
+  - name: int_ecommerce_first_last_order_created
     columns:
       # The * allows you to reference the YML anchor above for &user_id
       # This will bring through everything under that anchor: name, description, tests etc.
