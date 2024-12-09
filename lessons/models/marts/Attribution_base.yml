@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: Attribution_base
+    description: "Attribution model combining user events with RFM segmentation"
+    columns:
+      - name: user_id
+        description: "Unique identifier for a user"
+        tests:
+          - not_null
+
+      - name: session_id
+        description: "Session identifier for the user's session"
+        tests:
+          - not_null
+
+      - name: event_type
+        description: "Type of event (e.g., home, cart, department, product, purchase)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['home', 'cart', 'department', 'product', 'purchase']
+
+      - name: traffic_source
+        description: "Source of traffic for the user session"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "Timestamp when the event was created"
+        tests:
+          - not_null
+
+      - name: is_conversion
+        description: "Indicator if the event was a conversion (1) or not (0)"
+        data_type: INTEGER
+        tests:
+          - not_null
+
+      - name: conversion_value
+        description: "Priority of the conversion"
+        data_type: INTEGER
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 13
+
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "event_type != 'purchase' OR is_conversion = 1"
+      - dbt_utils.expression_is_true:
+          expression: "is_conversion != 1 OR conversion_value IS NOT NULL"
