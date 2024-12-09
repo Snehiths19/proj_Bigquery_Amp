@@ -32,7 +32,7 @@ This project focuses on:
 ## Business Problem and Solution
 
 ### **Problem**
-Companies often struggle to identify their most valuable customers and understand which touchpoints drive conversions. This lack of insight results in inefficient marketing spend and missed opportunities for growth.
+The Product Growth team is trying to identify opportunities on which customer journey's to focus on. To achieve this they want to find their most valuable customers and understand which touchpoints drive conversions. This lack of insight results in inefficient marketing spend and missed opportunities for growth.
 
 ### **Solution**
 This project simulates a workflow tailored to the Product Growth team at Amplitude:
@@ -53,7 +53,9 @@ This project simulates a workflow tailored to the Product Growth team at Amplitu
 
 ---
 
-## Data Workflow
+[## Data Workflow] (https://snehiths19.github.io/proj_Bigquery_Amp/)
+
+![DBT lineage](https://github.com/Snehiths19/proj_Bigquery_Amp/blob/main/docs/dbt-dag.png)
 
 1. [**Source Data:**](https://github.com/Snehiths19/proj_Bigquery_Amp/blob/main/lessons/models/staging/stg_ecommerce_events.sql)
    - Customer interactions (`home`, `cart`, `purchase`) with attributes such as `traffic_source` and timestamps.
