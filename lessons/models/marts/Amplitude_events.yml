@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: Amplitude_events
+    description: "Table containing Amplitude event data."
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user."
+        tests:
+          - not_null
+      - name: session_id
+        description: "Unique identifier for the session."
+
+      - name: event_type
+        description: "Type of the event."
+        tests:
+          - not_null
+      - name: traffic_source
+        description: "Source of the traffic."
+      - name: is_conversion
+        description: "Indicates if the event is a conversion."
+      - name: conversion_value
+        description: "Value associated with the conversion."
+      - name: created_at
+        description: "Timestamp when the event was created."
+        tests:
+          - not_null
