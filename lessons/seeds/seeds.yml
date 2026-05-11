@@ -26,3 +26,54 @@ seeds:
         name: STRING
         latitude: FLOAT
         longitude: FLOAT
+
+  - name: rfm_segments
+    description: >
+      Lookup table mapping (recency, frequency, monetary) score ranges to a
+      customer segment and outreach priority. Replaces a 14-arm CASE block in
+      RFM_Segmentation.sql. Each row defines an inclusive range on R, F, M
+      scores (each scored 1-5 via NTILE(5)). Together the rows partition the
+      5x5x5 score cube exactly once.
+    tests:
+      # Each (R,F,M) tuple must hit exactly one row, or the join fans out.
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - r_min
+            - r_max
+            - f_min
+            - f_max
+            - m_min
+            - m_max
+    columns:
+      - name: segment
+        description: "Customer segment name (e.g., champions, at_risk)."
+        tests:
+          - not_null
+          - unique
+      - name: priority
+        description: "Outreach priority (1 = highest)."
+        tests:
+          - not_null
+          - unique
+      - name: r_min
+        tests: [not_null]
+      - name: r_max
+        tests: [not_null]
+      - name: f_min
+        tests: [not_null]
+      - name: f_max
+        tests: [not_null]
+      - name: m_min
+        tests: [not_null]
+      - name: m_max
+        tests: [not_null]
+    config:
+      column_types:
+        r_min: INTEGER
+        r_max: INTEGER
+        f_min: INTEGER
+        f_max: INTEGER
+        m_min: INTEGER
+        m_max: INTEGER
+        segment: STRING
+        priority: INTEGER

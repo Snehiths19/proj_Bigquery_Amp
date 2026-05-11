@@ -1,0 +1,11 @@
+r_min,r_max,f_min,f_max,m_min,m_max,segment,priority
+5,5,4,5,1,5,champions,1
+3,4,4,5,1,5,loyal_customers,2
+1,2,5,5,1,5,cant_lose,3
+5,5,1,1,1,5,new_customers,5
+4,5,2,3,1,5,potential_loyalists,6
+4,4,1,1,1,5,promising,8
+3,3,3,3,1,5,need_attention,10
+3,3,1,2,1,5,about_to_sleep,11
+1,2,3,4,1,5,at_risk,12
+1,2,1,2,1,5,hibernating,13
