@@ -26,12 +26,37 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # dbt requires a profile file even for offline operations (parse,
-      # compile) so it can quote identifiers correctly. The placeholder
-      # project/dataset values here are never connected to — `dbt parse`
-      # never opens a BigQuery session. To run `dbt test` in CI, replace
-      # this with real service-account credentials from a GitHub Secret.
-      - name: Write placeholder dbt profile for CI
+      # CI needs to satisfy dbt-bigquery's credential-loading code path
+      # without an actual GCP service account. We generate a throwaway RSA
+      # key, wrap it in a structurally-valid service-account JSON, and
+      # point dbt at it. dbt loads it at adapter init (succeeds), but no
+      # query is ever issued so the fake credentials are never tested.
+      # `dbt parse` worked without this, but sqlfluff's dbt templater
+      # goes deeper and triggers the credential lookup.
+      - name: Generate throwaway service-account credentials for CI
+        run: |
+          openssl genrsa 2048 > /tmp/ci-private-key.pem
+          python - << 'PY'
+          import json
+          with open('/tmp/ci-private-key.pem') as f:
+              private_key = f.read()
+          sa = {
+              "type": "service_account",
+              "project_id": "dbt-ci-placeholder",
+              "private_key_id": "ci-placeholder",
+              "private_key": private_key,
+              "client_email": "ci@dbt-ci-placeholder.iam.gserviceaccount.com",
+              "client_id": "0",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci"
+          }
+          with open('/tmp/sa-key.json', 'w') as f:
+              json.dump(sa, f)
+          PY
+
+      - name: Write CI dbt profile
         run: |
           mkdir -p ~/.dbt
           cat > ~/.dbt/profiles.yml << 'EOF'
@@ -40,7 +65,8 @@ jobs:
             outputs:
               ci:
                 type: bigquery
-                method: oauth
+                method: service-account
+                keyfile: /tmp/sa-key.json
                 project: dbt-ci-placeholder
                 dataset: dbt_ci
                 location: US
