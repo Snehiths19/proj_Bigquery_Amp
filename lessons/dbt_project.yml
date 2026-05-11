@@ -51,4 +51,12 @@ models:
 
 tests:
   lessons:
-    +severity: warn
+    # Default for marts, seeds, and anything else: ironclad.
+    # A test failure here halts the build and skips downstream models.
+    +severity: error
+    # Upstream layers are where we clean raw data — tolerate noise.
+    # Warnings still show in logs, but they don't fail the build.
+    staging:
+      +severity: warn
+    intermediate:
+      +severity: warn
