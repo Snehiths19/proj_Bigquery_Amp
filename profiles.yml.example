@@ -1,0 +1,62 @@
+# Example dbt profiles configuration for proj_Bigquery_Amp.
+#
+# How to use this file:
+#   1. Create the directory if it doesn't exist:   mkdir %USERPROFILE%\.dbt
+#   2. Copy this file there:                       copy profiles.yml.example %USERPROFILE%\.dbt\profiles.yml
+#   3. Replace the placeholders below with your own values.
+#   4. Authenticate to GCP:                        gcloud auth application-default login
+#   5. Verify from the lessons/ directory:         ..\venv\Scripts\dbt.exe debug
+#
+# The `lessons:` profile name MUST match the `profile:` declared in
+# lessons/dbt_project.yml. If you also work in answers/, keep its profile too.
+
+lessons:
+  target: dev               # The default target invoked by `dbt run` without --target
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth         # Uses your gcloud application-default credentials.
+                            # Alternative: method: service-account + keyfile: /path/to/key.json
+                            # (See "Service-account auth" section below.)
+      project: your-gcp-project-id        # <-- REPLACE: your GCP project ID
+      dataset: dbt_Amplitude              # BigQuery dataset where dbt writes models
+      location: US                        # BigQuery region. Must match source data location.
+      priority: interactive               # "interactive" (immediate) or "batch" (cheaper, queued)
+      threads: 8                          # Parallel models per run. Higher = faster but more BQ slots used.
+      job_execution_timeout_seconds: 300  # Per-query timeout
+      job_retries: 1                      # Retries on transient errors
+
+# Optional: only needed if you're also working in the answers/ subproject
+# (which is locally-only — not part of the repo).
+#
+# answers:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: bigquery
+#       method: oauth
+#       database: "{{ env_var('BIGQUERY_PROJECT') }}"
+#       schema: dbt_test
+#       location: US
+#       priority: interactive
+#       threads: 8
+
+# ----------------------------------------------------------------------------
+# Service-account auth (alternative to oauth, recommended for CI):
+#
+# lessons:
+#   target: prod
+#   outputs:
+#     prod:
+#       type: bigquery
+#       method: service-account
+#       keyfile: /absolute/path/to/your/service-account-key.json
+#       project: your-gcp-project-id
+#       dataset: dbt_Amplitude
+#       location: US
+#       threads: 8
+#
+# Grant the service account these IAM roles on the BQ project:
+#   - BigQuery Data Editor   (read/write tables in the dataset)
+#   - BigQuery Job User      (run queries)
+#   - BigQuery User          (read metadata)

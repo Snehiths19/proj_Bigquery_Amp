@@ -100,3 +100,58 @@ To ensure data quality and maintain governance, this project incorporates **dbt*
 These practices ensure that the data pipeline is reliable, transparent, and adheres to governance standards.
 
 ---
+
+## How to Use
+
+### Prerequisites
+
+- **Python 3.12+** — check with `python --version`
+- **Google Cloud SDK (`gcloud`)** — [install instructions](https://cloud.google.com/sdk/docs/install)
+- **A GCP project with BigQuery enabled** — note your project ID, you'll need it
+- **Read access to `bigquery-public-data.thelook_ecommerce`** (granted to all GCP users by default)
+
+### First-time setup
+
+```powershell
+# 1. Clone and enter the repo
+git clone https://github.com/Snehiths19/proj_Bigquery_Amp.git
+cd proj_Bigquery_Amp
+
+# 2. Create a virtual environment and install dbt
+python -m venv venv
+venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# 3. Configure your dbt profile
+#    The example file in this repo shows the structure with placeholders.
+mkdir %USERPROFILE%\.dbt
+copy profiles.yml.example %USERPROFILE%\.dbt\profiles.yml
+#    Then open %USERPROFILE%\.dbt\profiles.yml and replace `your-gcp-project-id`
+#    with your actual GCP project ID.
+
+# 4. Authenticate to BigQuery (opens a browser)
+gcloud auth application-default login
+gcloud auth application-default set-quota-project your-gcp-project-id
+
+# 5. Verify the connection (run from the dbt project root)
+cd lessons
+..\venv\Scripts\dbt.exe debug
+```
+
+`dbt debug` should report "All checks passed!" — if not, the most common
+failure is auth (`invalid_grant`), which means step 4 needs to be re-run.
+
+### Day-to-day commands
+
+All run from inside `lessons/`:
+
+```powershell
+..\venv\Scripts\dbt.exe deps       # install packages from packages.yml
+..\venv\Scripts\dbt.exe build      # run + test in dependency order (usual default)
+..\venv\Scripts\dbt.exe run --select +RFM_Segmentation+  # rebuild one model + deps
+..\venv\Scripts\dbt.exe test       # run all tests
+..\venv\Scripts\dbt.exe docs generate && ..\venv\Scripts\dbt.exe docs serve
+```
+
+See [CLAUDE.md](CLAUDE.md) for the model-layer convention and known open issues.
+
+---

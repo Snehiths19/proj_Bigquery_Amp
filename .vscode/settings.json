@@ -1,0 +1,17 @@
+{
+  // Pin the Python interpreter to the project's venv so dbt Power User can
+  // find dbt-core / dbt-bigquery. Without this, VS Code falls back to whatever
+  // global interpreter happens to be selected (often a stale one), and the
+  // dbt extension reports "invalid" because it can't import dbt.
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+
+  // dbt Power User: use a local dbt-core install (the venv), not dbt Cloud.
+  "dbt.dbtIntegration": "core",
+
+  // Treat .sql files as jinja-sql so dbt's {{ ref('x') }} / {% if %} render
+  // correctly. The jinjahtml extension this project recommends is the
+  // highlighter; this binding tells VS Code when to invoke it for SQL.
+  "files.associations": {
+    "*.sql": "jinja-sql"
+  }
+}
