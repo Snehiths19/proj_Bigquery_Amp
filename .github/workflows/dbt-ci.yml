@@ -1,0 +1,68 @@
+name: dbt CI
+
+# Run on every PR (catch issues before review) and every push to main
+# (catch issues that snuck in via direct commit).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint-and-compile:
+    name: Lint + dbt parse
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # dbt requires a profile file even for offline operations (parse,
+      # compile) so it can quote identifiers correctly. The placeholder
+      # project/dataset values here are never connected to — `dbt parse`
+      # never opens a BigQuery session. To run `dbt test` in CI, replace
+      # this with real service-account credentials from a GitHub Secret.
+      - name: Write placeholder dbt profile for CI
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml << 'EOF'
+          lessons:
+            target: ci
+            outputs:
+              ci:
+                type: bigquery
+                method: oauth
+                project: dbt-ci-placeholder
+                dataset: dbt_ci
+                location: US
+                threads: 1
+                priority: interactive
+                job_execution_timeout_seconds: 300
+                job_retries: 1
+          EOF
+
+      - name: Install dbt packages
+        working-directory: lessons
+        run: dbt deps
+
+      # `dbt parse` expands all Jinja and validates every ref() points to
+      # an existing model. Catches the #1 PR-breaker (renaming a model
+      # without updating callers) without needing warehouse access.
+      - name: dbt parse
+        working-directory: lessons
+        run: dbt parse
+
+      # sqlfluff with templater=dbt uses dbt internally to compile each
+      # model's Jinja, then lints the resulting SQL. Same check that
+      # runs locally via the pre-commit hook — ensures CI agrees.
+      - name: sqlfluff lint
+        run: sqlfluff lint lessons/models
