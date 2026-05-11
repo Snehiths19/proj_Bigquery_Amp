@@ -27,6 +27,12 @@ dispatch:
   - macro_namespace: 'dbt'
     search_order: ['python', 'dbt']
 
+# Project-wide variables, overridable on the CLI via --vars
+vars:
+  # How many days of source data to re-scan on every incremental run.
+  # Larger values = more tolerance for late-arriving events, more BQ scan cost.
+  incremental_lookback_days: 3
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -46,5 +52,3 @@ models:
 tests:
   lessons:
     +severity: warn
-
-
