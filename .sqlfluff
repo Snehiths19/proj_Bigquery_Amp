@@ -22,6 +22,12 @@ template_blocks_indent = false
 # Point sqlfluff's dbt templater at the lessons/ project (where dbt_project.yml lives).
 project_dir = lessons
 
+# Used only when invoked with `--templater jinja` (e.g. from CI without creds).
+# Built-in dbt stubs let sqlfluff resolve {{ ref() }}, {{ source() }}, {{ var() }},
+# and {{ this }} to placeholder strings without loading dbt-core or contacting BQ.
+[sqlfluff:templater:jinja]
+apply_dbt_builtins = True
+
 # ---- Case conventions ------------------------------------------------------
 # SELECT, FROM, WHERE, JOIN — keywords uppercase
 [sqlfluff:rules:capitalisation.keywords]
