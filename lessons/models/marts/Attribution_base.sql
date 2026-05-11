@@ -6,8 +6,9 @@ WITH filtered_events AS (
         traffic_source,
         created_at
     FROM {{ ref('stg_ecommerce_events') }}
-    WHERE event_type IN ('home', 'cart', 'department', 'product', 'purchase')
-	AND user_id IS NOT NULL
+    WHERE
+        event_type IN ('home', 'cart', 'department', 'product', 'purchase')
+        AND user_id IS NOT NULL
 ),
 rfm_segmentation AS (
     SELECT
@@ -29,8 +30,8 @@ joined_data AS (
             PARTITION BY fe.user_id, fe.event_type, rs.order_created_at
             ORDER BY ABS(TIMESTAMP_DIFF(fe.created_at, rs.order_created_at, SECOND)) ASC
         ) AS join_rank -- Closest match by time difference
-    FROM filtered_events fe
-    LEFT JOIN rfm_segmentation rs
+    FROM filtered_events AS fe
+    LEFT JOIN rfm_segmentation AS rs
         ON fe.user_id = rs.user_id
         --AND fe.created_at <= rs.order_created_at
 ),
@@ -52,8 +53,6 @@ SELECT
     END AS is_conversion,
     CASE
         WHEN rd.event_type = 'purchase' THEN rd.priority
-        ELSE NULL
     END AS conversion_value
-FROM ranked_data rd
+FROM ranked_data AS rd
 ORDER BY rd.user_id, rd.created_at
-

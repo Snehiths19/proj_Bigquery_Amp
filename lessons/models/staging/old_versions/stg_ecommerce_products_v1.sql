@@ -1,16 +1,16 @@
 WITH source AS (
-	SELECT *
+    SELECT *
 
-	FROM {{ source('thelook_ecommerce', 'products') }}
+    FROM {{ source('thelook_ecommerce', 'products') }}
 )
 
 SELECT
-	-- IDs
-	id AS product_id,
+    -- IDs
+    id AS product_id,
 
-	-- Other columns
-	cost,
-	retail_price,
-	department
+    -- Other columns
+    cost,
+    retail_price,
+    department
 
 FROM source

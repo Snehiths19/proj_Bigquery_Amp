@@ -1,0 +1,49 @@
+[sqlfluff]
+# Use dbt to compile Jinja templates before linting. Accurate but ~10s slower
+# on first run (loads dbt parser). Required for `{{ ref('x') }}` resolution.
+templater = dbt
+dialect = bigquery
+sql_file_exts = .sql
+max_line_length = 120
+
+# Rules we don't want to enforce in this project:
+#   structure.column_order — order columns alphabetically (too opinionated)
+#   structure.subquery     — disallow subqueries in WHERE (CTEs are nicer but not always)
+#   layout.cte_newline     — overly strict; CTE formatting is taste
+exclude_rules = structure.column_order, structure.subquery, layout.cte_newline
+
+[sqlfluff:indentation]
+tab_space_size = 4
+indented_joins = false
+indented_using_on = true
+template_blocks_indent = false
+
+[sqlfluff:templater:dbt]
+# Point sqlfluff's dbt templater at the lessons/ project (where dbt_project.yml lives).
+project_dir = lessons
+
+# ---- Case conventions ------------------------------------------------------
+# SELECT, FROM, WHERE, JOIN — keywords uppercase
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = upper
+
+# column_name, table_name — identifiers lowercase (NOT TableName)
+[sqlfluff:rules:capitalisation.identifiers]
+extended_capitalisation_policy = lower
+
+# COUNT(), DATE_DIFF() — functions uppercase
+[sqlfluff:rules:capitalisation.functions]
+extended_capitalisation_policy = upper
+
+# NULL, TRUE, FALSE — literals uppercase
+[sqlfluff:rules:capitalisation.literals]
+capitalisation_policy = upper
+
+# STRING, INTEGER, TIMESTAMP — type names uppercase
+[sqlfluff:rules:capitalisation.types]
+extended_capitalisation_policy = upper
+
+# ---- References ------------------------------------------------------------
+# Within one SELECT, refs must be all-qualified or all-unqualified — not a mix.
+[sqlfluff:rules:references.consistent]
+single_table_references = consistent

@@ -1,0 +1,11 @@
+# Generated dbt artifacts — don't lint compiled SQL or package vendored code
+**/target/
+**/dbt_packages/
+**/dbt_packages_new/
+**/logs/
+
+# answers/ is the reference-solution copy, locally-only (gitignored anyway).
+answers/
+
+# venv site-packages can contain .sql fixtures we don't own
+venv/

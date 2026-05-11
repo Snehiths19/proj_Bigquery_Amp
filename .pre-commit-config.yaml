@@ -1,0 +1,37 @@
+# Pre-commit hooks for proj_Bigquery_Amp.
+#
+# One-time setup (run from repo root):
+#   venv\Scripts\pre-commit.exe install
+# After that, hooks run automatically on every `git commit`. To run all hooks
+# against every file (initial pass, or in CI):
+#   venv\Scripts\pre-commit.exe run --all-files
+#
+# To skip hooks for a one-off commit (use sparingly):
+#   git commit --no-verify -m "message"
+
+repos:
+  # Built-in hygiene checks — fast, free, catches obvious issues
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        # dbt's schema yml files use !env_var and other custom tags; allow them.
+        args: [--unsafe]
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+
+  # SQL linting via sqlfluff. Two hooks: `sqlfluff-lint` reports issues
+  # (fails the commit), `sqlfluff-fix` auto-fixes what it can.
+  # We use `lint` only by default — keep `fix` opt-in to avoid surprise edits.
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 3.2.5
+    hooks:
+      - id: sqlfluff-lint
+        # Only lint files we own (not vendored packages)
+        files: ^lessons/(models|tests|macros|snapshots)/.*\.sql$
+        additional_dependencies:
+          - dbt-bigquery~=1.7.0
+          - sqlfluff-templater-dbt~=3.2.0
