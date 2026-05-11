@@ -36,7 +36,7 @@ The Product Growth team is trying to identify opportunities on which customer jo
 
 ### **Solution**
 This project simulates a workflow tailored to the Product Growth team at Amplitude:
-1. (**RFM Analysis:**)[(https://github.com/Snehiths19/proj_Bigquery_Amp/blob/main/lessons/models/marts/RFM_Segmentation.sql)] Categorizes customers into actionable priority groups (e.g., `Champions`, `At-Risk`) to focus efforts on the most valuable users.
+1. [**RFM Analysis:**](https://github.com/Snehiths19/proj_Bigquery_Amp/blob/main/lessons/models/marts/RFM_Segmentation.sql) Categorizes customers into actionable priority groups (e.g., `Champions`, `At-Risk`) to focus efforts on the most valuable users.
 2. **Journey Tracking:** Creates a structured dataset for **Amplitude** to provide insights into how customer interactions and traffic sources influence conversions.
 3. **Actionable Insights:** Provides a ready-to-use dataset and visualizations to guide marketing and growth decisions. The data is *connected* to Amplitude to utilize its Attribution Modeling and identifying *optimal customer journey* using its Attribution Modeling along with identification.
 

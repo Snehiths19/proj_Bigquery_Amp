@@ -1,1 +1,4 @@
-dbt-bigquery==1.6.1
+# dbt runtime
+# Upgraded from dbt-bigquery==1.6.1 to ~=1.7.0 to gain unit tests support.
+# ~= picks up patch fixes (1.7.0 -> 1.7.18) but pins the minor line.
+dbt-bigquery~=1.7.0
